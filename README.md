@@ -2,8 +2,15 @@
 ## University of Colorado System
 
 Useful SQL [repo](https://github.com/jenniferp1/technicals) with additional links. <br>
-[Getting Started: PostgreSQL](https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html)
-[Python-PostgreSQL Database Programming](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/Python2_Apps.html#Python-PostgreSQL)
+[Getting Started: PostgreSQL](https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html) <br>
+[Python-PostgreSQL Database Programming](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/Python2_Apps.html#Python-PostgreSQL) <br>
+
+## TOC
+- [Content Description](#content-description)
+- [postgresql cheat sheet](#cheat-sheet-for-postgresql-server-commands)
+- [psql cheat sheet](#cheat-sheet-for-psql-commands)
+- [pgadmin4](#admin-tools)
+- [Terminology](#terminology)
 
 ### Content Description
 
@@ -17,7 +24,7 @@ Covered content emphasizes
 ![alt text](https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/ERD.png) <br>
 Entity Relationship Diagram (example): entities depicted as rectangles; relationships depicted as lines connecting the rectangles
 
-### Cheat sheet: postgresql server commands
+### Cheat sheet for postgresql server commands
 $ sudo service postgresql stop     &emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;// Stop the service <br>
 $ sudo service postgresql start    &emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;// Start the service <br>
 $ sudo service postgresql restart  &emsp;&emsp;&emsp;&emsp;// Stop and restart the service <br>
@@ -27,7 +34,7 @@ $ sudo -u postgres psql            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&em
 $ psql -U [username] [databasename]&emsp;&emsp;// Login to PostgreSQL: psql -U user database
 
 
-### Cheat sheet: psql commands
+### Cheat sheet for psql commands
 - \?: show all psql commands.
 - \h sql-command: show syntax on SQL command.
 - \c dbname [username]: Connect to database, with an optional username (or \connect).
