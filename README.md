@@ -62,20 +62,24 @@ $ pgadmin4
 
 ### Terminology
 
-**Business intelligence processing** utilizes data warehouses with historical data at both the individual and summarized levels.  Individual-level data provides flexibility for responding to a wide range of business intelligence needs. While summarized data provides fast response to repetitive queries.  *Business intelligence processing* involves substantial processing of data from *operational databases* and external data sources. 
+**Business intelligence processing** utilizes data warehouses with historical data at both the individual and summarized levels.  Individual-level data provides flexibility for responding to a wide range of business intelligence needs. While summarized data provides fast response to repetitive queries.  *Business intelligence processing* involves substantial processing of data from `operational databases` and external data sources. 
 
 **Data transformation** transformational activities such as cleaning, integrating and standardizing are essential for the achieving benefits of a data warehouse.
 
-**Data warehouse** refers to a logically centralized data repository where data from *operational databases* and other sources are integrated, cleaned and standardized to support business intelligence.
+**Data warehouse** refers to a logically centralized data repository where data from `operational databases` and other sources are integrated, cleaned and standardized to support business intelligence.
 
-**Operational databases** provide the raw materials for management decision-making. The operational databases must be summarized and integrated to provide value for tactical and strategic decision-making (i.e., decisions going beyond day-to-day operations).
+**Join** To combine tables in relational database we use matching values. The operation of combining tables on matching values is known as a *join*.
+
+**Operational databases** provide the raw materials for management decision-making. The operational databases must be *summarized* and *integrated* to provide value for tactical and strategic decision-making (i.e., decisions going beyond day-to-day operations).
 
 **Relational database** A relational database consists of a collection of tables. Each table has a heading (definition part) and a body (content part).  For example, a student table may have columns (with headings) for student number, student address, city, state, zip, class, major, and cumulative grade point average.
-The body shows the rows of the table. Each row in a student table represents a student enrolled at a university. *Naming Convention*: To facilitate communication, the naming convention for column names uses a table abbreviation (e.g., for a Student table this = std) followed by a descriptive name.
+The body shows the rows of the table. Each row in a student table represents a student enrolled at a university. `Naming Convention`: To facilitate communication, the naming convention for column names uses a table abbreviation (e.g., for a Student table this = std) followed by a descriptive name.
 Because column names are often used without identifying the associated tables, the abbreviation supports easy table association. The mixed case in a column name highlights the different parts of the column name (example below).
 ![alt text](https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/NameConvention.png) <br>
+Alternate terminology is used for tables depending on field.  See table below.
+![alt text](https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/AltTermTable.png) <br>
 
-**Transaction processing** relies on *operational databases* with current data at the individual level. In contrast to *business intelligence processing*, *transaction processing* collects primary data from operations for resolving operational (i.e., day-to-day) problems.
+**Transaction processing** relies on `operational databases` with current data at the individual level. In contrast to `business intelligence processing`, *transaction processing* collects primary data from operations for resolving operational (i.e., day-to-day) problems.
 
 
 
