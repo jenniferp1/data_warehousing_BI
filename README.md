@@ -62,13 +62,13 @@ CONSTRAINT [constraint-name] <constraint-type> (column-name) <br>
 
 ### Example create table with external constraints
 Note both constraints could also be placed inline <br>
-`CREATE TABLE Course
-( CourseNo  CHAR(6),
-  CrsDesc   VARCHAR(250),
-  CrsUnits  SMALLINT,
-CONSTRAINT PKCourse PRIMARY KEY (CourseNo),
-CONSTRAINT UniqueCrsDesc UNIQUE (CrsDesc)
-  )`
+`CREATE TABLE Course`
+`( CourseNo  CHAR(6), `
+`  CrsDesc   VARCHAR(250),`
+`  CrsUnits  SMALLINT,`
+`CONSTRAINT PKCourse PRIMARY KEY (CourseNo),`
+`CONSTRAINT UniqueCrsDesc UNIQUE (CrsDesc)`
+`  )`
 <br>
 Note the PKEnrollment constraint must be external because it involves multiple columns <br>
 `CREATE TABLE PKEnrollment
