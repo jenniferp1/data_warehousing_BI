@@ -8,8 +8,8 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 
 ## TOC
 - [SQL CREATE TABLE](#basic-sql-create-table-syntax)
-- [Example for CREATE TABLE](#example-create-table)
-- [Example for CONSTRAINTS](#example-constraint)
+- [Example for CREATE TABLE Syntax](#example-create-table-syntax)
+- [Example for CONSTRAINT Syntax](#example-constraint-syntax)
 - [Example of External Constraints](#example-create-table-with-external-constraints)
 - [Example check a constraint](#example-check-a-constraint)
 
@@ -29,7 +29,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
   - Check
 <br>
 
-### Example CREATE TABLE <br>
+### Example CREATE TABLE Syntax<br>
 ```
 CREATE TABLE Student
 (
@@ -51,7 +51,7 @@ FLOAT = number with floating precision (e.g., interest rates or scientific calcu
 DECIMAL = a number with fixed precision (e.g., monetary amounts or GPAs) with total digits, number of digits after the decimal<br>
 Date/Time: DATE, TIME, TIMESTAMP <br>
 
-### Example CONSTRAINT
+### Example CONSTRAINT Syntax
 SYNTAX (external constraints): <br>
 CONSTRAINT [constraint-name] <constraint-type> (column-name) <br>
 - constraint-name is optional but good practice to identify the error when a constraint violation occurs <br>
