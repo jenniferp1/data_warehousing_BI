@@ -73,8 +73,8 @@ $ pgadmin4
 **Foreign key** A foreign key is a column or combination of columns related to a `primary key` in *another table*. A foreign key has the same datatype and often the same name as the related `primary key`. Using the Student Table (see defintion for Relational Diagram), student number in an enrollment table has the same name and data type as it's associate primary key, student number in the student table. 
 
 **Integrity Rules** 
-- Entity integrity means that each table must have a primary key. A primary key cannot have null values in any row. Entity integrity ensures entities; people, things, places, and events are uniquely identified in a database. <br>
-- Referential integrity means that column values in one table must match column values in a related table. For example, the value of student number in each row of the enrollment table must match the value of student number in some row of the student table. Referential integrity ensures that a database contains valid connections. For example, each row of the enrollment table contains a student number of a valid student. <br>
+- **Entity integrity** means that each table must have a primary key. A primary key cannot have null values in any row. Entity integrity ensures entities; people, things, places, and events are uniquely identified in a database. <br>
+- **Referential integrity** means that column values in one table must match column values in a related table. For example, the value of student number in each row of the enrollment table must match the value of student number in some row of the student table. Referential integrity ensures that a database contains valid connections. For example, each row of the enrollment table contains a student number of a valid student. <br>
 
 **Join** To combine tables in relational database we use matching values. The operation of combining tables on matching values is known as a *join*.
 
@@ -92,7 +92,8 @@ Alternate terminology is used for tables depending on field.  See table below. <
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/AltTermTable.png" width="500" height="250"/> <br>
 
 **Relational diagram** See `Entity Relationship Diagram`. A relational diagram is a representation of the relational database's entities, the attributes within those entities, and the relationships between those entities. A database diagram is essential for understanding the major components: primary keys, foreign keys, and relationships of a database, and formulating queries that combine tables.
-<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/RelationalDiagram.png" width="400" height="400"/> <br>
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/RelationalDiagram.png" width="550" height="400"/> <br>
+Arrow points towards parent table.  Foot of line attached to child table.  Solid line means FK cannot be Null.  Dashed line means FK can accept Null values. <br>
 
 **Transaction processing** relies on `operational databases` with current data at the individual level. In contrast to `business intelligence processing`, *transaction processing* collects primary data from operations for resolving operational (i.e., day-to-day) problems.
 
