@@ -76,8 +76,10 @@ $ pgadmin4
 The body shows the rows of the table. Each row in a student table represents a student enrolled at a university. `Naming Convention`: To facilitate communication, the naming convention for column names uses a table abbreviation (e.g., for a Student table this = std) followed by a descriptive name.
 Because column names are often used without identifying the associated tables, the abbreviation supports easy table association. The mixed case in a column name highlights the different parts of the column name (example below).
 ![alt text](https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/NameConvention.png) <br>
-Alternate terminology is used for tables depending on field.  See table below.
-![alt text](https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/AltTermTable.png) <br>
+<br>
+<br>
+Alternate terminology is used for tables depending on field.  See table below. <br>
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/AltTermTable.png" width="500" height="250"/> <br>
 
 **Transaction processing** relies on `operational databases` with current data at the individual level. In contrast to `business intelligence processing`, *transaction processing* collects primary data from operations for resolving operational (i.e., day-to-day) problems.
 
