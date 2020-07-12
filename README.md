@@ -75,6 +75,7 @@ CONSTRAINT UniqueCrsDesc UNIQUE (CrsDesc)
 ```
 <br>
 Note the PKEnrollment constraint must be external because it involves multiple columns <br>
+
 ```
 CREATE TABLE PKEnrollment
 (
@@ -86,7 +87,7 @@ CONSTRAINT  FKOfferNo FOREIGN KEY (OfferNo) REFERENCE Offering,
 CONSTRAINT  FKStdNo FOREIGN KEY (StdNo) REFERENCE Student
   )
 ```
-<br>
+
 ### Example check a constraint
 `CONSTRAINT ValidGPA CHECK (StdGPA BETWEEN 0 AND 4)` <br>
 `CONSTRAINT ValidStdClass CHECK (StdClass IN ('FR', 'SO', 'JR', 'SR'))` <br>
