@@ -7,7 +7,37 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 [Python-PostgreSQL Database Programming](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/Python2_Apps.html#Python-PostgreSQL) <br>
 
 ## TOC
-- [SQL CREATE TABLE statement](#basic-sql-create-table-statement)
+- [SQL CREATE TABLE](#basic-sql-create-table-syntax)
 
 
-### Basic SQL CREATE TABLE statement
+### Basic SQL CREATE TABLE Syntax
+`CREATE TABLE <table-name> (<column-list> [<constraint-list>])` <br>
+- table-name = name of your table
+- column-list with data types = list of column names in table
+- constraint-list: optional =
+  - CONSTRAINT [ConstraintName] <Constraint-Spec>
+  - Primary Key
+  - Foreign Key
+  - Unique
+  - Check
+<br>
+
+Example:<br>
+CREATE TABLE Student
+(
+  StdNo         CHAR(11),
+  StdFirstName  VARCHAR(50),
+  StdLastName   VARCHAR(50),
+  StdState      CHAR(2),
+  StdZip        CHAR(10),
+  StdMajor      CHAR(6),
+  StdClass      CHAR(6),
+  StdGPA        DECIMAL(3,2)
+)
+
+CHAR = fixed length character string of *exact* length L <br>
+VARCHAR = variable length character string of *maximum* length L <br>
+INTEGER = a whole number (no decimal point) (e.g., age and years)<br>
+FLOAT = number with floating precision (e.g., interest rates or scientific calculations) <br>
+DECIMAL = a number with fixed precision (e.g., monetary amounts or GPAs) with total digits, number of digits after the decimal<br>
+Date/Time: DATE, TIME, TIMESTAMP <br>
