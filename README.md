@@ -86,7 +86,7 @@ CONSTRAINT  FKOfferNo FOREIGN KEY (OfferNo) REFERENCE Offering,
 CONSTRAINT  FKStdNo FOREIGN KEY (StdNo) REFERENCE Student
   )
 ```
-
+<br>
 ### Example check a constraint
 `CONSTRAINT ValidGPA CHECK (StdGPA BETWEEN 0 AND 4)` <br>
 `CONSTRAINT ValidStdClass CHECK (StdClass IN ('FR', 'SO', 'JR', 'SR'))` <br>
