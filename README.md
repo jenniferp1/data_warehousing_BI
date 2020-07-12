@@ -23,7 +23,7 @@ Covered content emphasizes
 - concepts and concrete skills for data warehouse design, transformations to populate data warehouses from operational databases and DBMS features to implement and use data warehouses for business intelligence.
 
 ![alt text](https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/ERD.png) <br>
-Entity Relationship Diagram (example): entities depicted as rectangles; relationships depicted as lines connecting the rectangles
+`Entity Relationship Diagram` (example): entities depicted as rectangles; relationships depicted as lines connecting the rectangles
 
 ### Cheat sheet for postgresql server commands
 $ sudo service postgresql stop     &emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;// Stop the service <br>
@@ -68,9 +68,19 @@ $ pgadmin4
 
 **Data warehouse** refers to a logically centralized data repository where data from `operational databases` and other sources are integrated, cleaned and standardized to support business intelligence.
 
+**Entity Relationship Diagram (ERD)** defines the relationship between entities and their attributes within a `relational database`. In an ERD, we are simply visualising the entities, their attributes, and the relation between them. We can mark primary keys with P and foreign keys with F. PF indicates the key is both a primary and foreign key (See `Relational Diagram` below).
+
+**Foreign key** A foreign key is a column or combination of columns related to a `primary key` in *another table*. A foreign key has the same datatype and often the same name as the related `primary key`. Using the Student Table (see defintion for Relational Diagram), student number in an enrollment table has the same name and data type as it's associate primary key, student number in the student table. 
+
+**Integrity Rules** 
+- Entity integrity means that each table must have a primary key. A primary key cannot have null values in any row. Entity integrity ensures entities; people, things, places, and events are uniquely identified in a database. <br>
+- Referential integrity means that column values in one table must match column values in a related table. For example, the value of student number in each row of the enrollment table must match the value of student number in some row of the student table. Referential integrity ensures that a database contains valid connections. For example, each row of the enrollment table contains a student number of a valid student. <br>
+
 **Join** To combine tables in relational database we use matching values. The operation of combining tables on matching values is known as a *join*.
 
 **Operational databases** provide the raw materials for management decision-making. The operational databases must be *summarized* and *integrated* to provide value for tactical and strategic decision-making (i.e., decisions going beyond day-to-day operations).
+
+**Primary key**  A primary key is a column or combination of columns with unique values. Unique means that no two rows of a table have the same value.  If a primary key contains more than one column, no column can be removed and still retain uniqueness of values. Single column primary keys, the typical situation, are always minimal.
 
 **Relational database** A relational database consists of a collection of tables. Each table has a heading (definition part) and a body (content part).  For example, a student table may have columns (with headings) for student number, student address, city, state, zip, class, major, and cumulative grade point average.
 The body shows the rows of the table. Each row in a student table represents a student enrolled at a university. `Naming Convention`: To facilitate communication, the naming convention for column names uses a table abbreviation (e.g., for a Student table this = std) followed by a descriptive name.
@@ -80,6 +90,9 @@ Because column names are often used without identifying the associated tables, t
 <br>
 Alternate terminology is used for tables depending on field.  See table below. <br>
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/AltTermTable.png" width="500" height="250"/> <br>
+
+**Relational diagram** See `Entity Relationship Diagram`. A relational diagram is a representation of the relational database's entities, the attributes within those entities, and the relationships between those entities. A database diagram is essential for understanding the major components: primary keys, foreign keys, and relationships of a database, and formulating queries that combine tables.
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/RelationalDiagram.png" width="400" height="400"/> <br>
 
 **Transaction processing** relies on `operational databases` with current data at the individual level. In contrast to `business intelligence processing`, *transaction processing* collects primary data from operations for resolving operational (i.e., day-to-day) problems.
 
