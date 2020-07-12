@@ -30,6 +30,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 <br>
 
 ### Example CREATE TABLE <br>
+```
 CREATE TABLE Student
 (
   StdNo         CHAR(11),
@@ -41,6 +42,7 @@ CREATE TABLE Student
   StdClass      CHAR(6),
   StdGPA        DECIMAL(3,2)
 )
+```
 
 CHAR = fixed length character string of *exact* length L <br>
 VARCHAR = variable length character string of *maximum* length L <br>
@@ -73,7 +75,8 @@ CONSTRAINT UniqueCrsDesc UNIQUE (CrsDesc)
 ```
 <br>
 Note the PKEnrollment constraint must be external because it involves multiple columns <br>
-`CREATE TABLE PKEnrollment
+```
+CREATE TABLE PKEnrollment
 (
   OfferNo     INTEGER,
   StdNo       CHAR(11),
@@ -81,7 +84,8 @@ Note the PKEnrollment constraint must be external because it involves multiple c
 CONSTRAINT  PKEnrollment PRIMARY KEY (OfferNo, StdNo),
 CONSTRAINT  FKOfferNo FOREIGN KEY (OfferNo) REFERENCE Offering,
 CONSTRAINT  FKStdNo FOREIGN KEY (StdNo) REFERENCE Student
-  )`
+  )
+```
 
 ### Example check a constraint
 `CONSTRAINT ValidGPA CHECK (StdGPA BETWEEN 0 AND 4)` <br>
