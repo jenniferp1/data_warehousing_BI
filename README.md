@@ -14,9 +14,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example check a constraint](#example-check-a-constraint)
 
 ## Exercises
-<ol>
-<li>[Building an Intercollegiate Athletics Database: CREATE TABLE]()</li>
-</ol>
+1. [Building an Intercollegiate Athletics Database: CREATE TABLE](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod03)
 
 ### Basic SQL CREATE TABLE Syntax
 `CREATE TABLE <table-name> (<column-list> [<constraint-list>])` <br>
