@@ -55,7 +55,9 @@ Date/Time: DATE, TIME, TIMESTAMP <br>
 SYNTAX (for external constraints): <br>
 ```CONSTRAINT [constraint-name] <constraint-type> (column-name)``` <br>
 - constraint-name is optional but good practice to identify the error when a constraint violation occurs <br>
-- keyword CONSTRAINT is option for inline constraints <br>
+- Note keyword `CONSTRAINT` is optional for inline constraints <br>
+- [Inline vs external constraints](https://codingsight.com/difference-between-inline-and-out-of-line-constraints/)
+
 `CONSTRAINT PKCourse PRIMARY KEY (CourseNo)` <br>
 `CONSTRAINT PKEnrollment PRIMARY KEY (OfferNo, StdNo)` <br>
 `CONSTRAINT UniqueCrsDesc UNIQUE (CrsDesc)` <br>
