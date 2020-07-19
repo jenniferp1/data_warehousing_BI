@@ -52,8 +52,8 @@ DECIMAL = a number with fixed precision (e.g., monetary amounts or GPAs) with to
 Date/Time: DATE, TIME, TIMESTAMP <br>
 
 ### Example CONSTRAINT Syntax
-SYNTAX (external constraints): <br>
-CONSTRAINT [constraint-name] <constraint-type> (column-name) <br>
+SYNTAX (for external constraints): <br>
+```CONSTRAINT [constraint-name] <constraint-type> (column-name)``` <br>
 - constraint-name is optional but good practice to identify the error when a constraint violation occurs <br>
 - keyword CONSTRAINT is option for inline constraints <br>
 `CONSTRAINT PKCourse PRIMARY KEY (CourseNo)` <br>
