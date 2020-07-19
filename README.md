@@ -18,7 +18,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 [Grant or Revoke privileges](https://www.ntchosting.com/encyclopedia/databases/postgresql/create-user/) <br>
 [Grant or Revoke syntax](https://beginner-sql-tutorial.com/sql-grant-revoke-privileges-roles.htm) <br>
 
-If you do not want to install something like MySQL, PostgreSQL etc. you can use [SQL Fiddle](http://sqlfiddle.com/) <br>
+If you do not want to install something like MySQL, PostgreSQL, etc. you can use [SQL Fiddle](http://sqlfiddle.com/) <br>
 
 ## TOC
 - [Content Description](#content-description)
