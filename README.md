@@ -1,6 +1,8 @@
 # Data Warehousing for Business Intelligence
 ## University of Colorado System
 
+### Helpful resources
+
 Useful SQL [repo](https://github.com/jenniferp1/technicals) with additional links. <br>
 Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 
