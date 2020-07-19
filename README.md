@@ -5,6 +5,15 @@ Useful SQL [repo](https://github.com/jenniferp1/technicals) with additional link
 Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 [Getting Started: PostgreSQL](https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html) <br>
 [Python-PostgreSQL Database Programming](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/Python2_Apps.html#Python-PostgreSQL) <br>
+[Getting started with psql and pgadmin](https://www.guru99.com/postgresql-create-alter-add-user.html) <br>
+
+[Creating your first database and table](https://www.geeksforgeeks.org/sql-create/) <br>
+[Creating users and databases in psql](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e) <br>
+[Create database with Owner](https://www.postgresql.org/docs/10/sql-createdatabase.html) <br>
+[Creating with pgadmin](https://www.enterprisedb.com/postgres-tutorials/how-create-postgresql-database-and-users-using-psql-and-pgadmin) <br>
+
+[Grant or Revoke privileges](https://www.ntchosting.com/encyclopedia/databases/postgresql/create-user/) <br>
+[Grant or Revoke syntax](https://beginner-sql-tutorial.com/sql-grant-revoke-privileges-roles.htm) <br>
 
 ## TOC
 - [Content Description](#content-description)
