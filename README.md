@@ -13,6 +13,10 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example of External Constraints](#example-create-table-with-external-constraints)
 - [Example check a constraint](#example-check-a-constraint)
 
+## Exercises
+<ol>
+<li>[Building an Intercollegiate Athletics Database: CREATE TABLE]()</li>
+</ol>
 
 ### Basic SQL CREATE TABLE Syntax
 `CREATE TABLE <table-name> (<column-list> [<constraint-list>])` <br>
