@@ -7,6 +7,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 [Python-PostgreSQL Database Programming](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/Python2_Apps.html#Python-PostgreSQL) <br>
 
 ## TOC
+- [Exercises0(#exercises)
 - [SQL CREATE TABLE](#basic-sql-create-table-syntax)
 - [Example for CREATE TABLE Syntax](#example-create-table-syntax)
 - [Example for CONSTRAINT Syntax](#example-constraint-syntax)
@@ -32,6 +33,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
   - Check
 <br>
 
+## Usage Examples
 ### Example CREATE TABLE Syntax<br>
 ```
 CREATE TABLE Student
