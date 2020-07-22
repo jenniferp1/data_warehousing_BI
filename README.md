@@ -10,6 +10,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Exercises](#exercises)
 - [SQL CREATE TABLE](#basic-sql-create-table-syntax)
 - [Example for CREATE TABLE Syntax](#example-create-table-syntax)
+  - [Data Types](#data-types)
 - [Example for CONSTRAINT Syntax](#example-constraint-syntax)
 - [Example of External Constraints](#example-create-table-with-external-constraints)
 - [Example Check a Constraint](#example-check-a-constraint)
@@ -49,13 +50,17 @@ CREATE TABLE Student
   StdGPA        DECIMAL(3,2)
 )
 ```
-
+#### Data Types
 CHAR = fixed length character string of *exact* length L <br>
 VARCHAR = variable length character string of *maximum* length L <br>
 INTEGER = a whole number (no decimal point) (e.g., age and years)<br>
 FLOAT = number with floating precision (e.g., interest rates or scientific calculations) <br>
 DECIMAL = a number with fixed precision (e.g., monetary amounts or GPAs) with total digits, number of digits after the decimal<br>
 Date/Time: DATE, TIME, TIMESTAMP <br>
+
+[List](https://www.postgresql.org/docs/9.5/datatype.html#DATATYPE-TABLE) of data types <br>
+[Range of numeric data types](https://www.tutorialspoint.com/postgresql/postgresql_data_types.htm) <br>
+[Additional resource](https://www.guru99.com/postgresql-data-types.html) <br>
 
 ### Example CONSTRAINT Syntax
 SYNTAX (for external constraints): <br>
