@@ -12,7 +12,8 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example for CREATE TABLE Syntax](#example-create-table-syntax)
 - [Example for CONSTRAINT Syntax](#example-constraint-syntax)
 - [Example of External Constraints](#example-create-table-with-external-constraints)
-- [Example check a constraint](#example-check-a-constraint)
+- [Example Check a Constraint](#example-check-a-constraint)
+- [Example of Basic Database Query](#example-of-basic-database-query)
 
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
@@ -99,3 +100,17 @@ CONSTRAINT  FKStdNo FOREIGN KEY (StdNo) REFERENCE Student
 `CONSTRAINT ValidGPA CHECK (StdGPA BETWEEN 0 AND 4)` <br>
 `CONSTRAINT ValidStdClass CHECK (StdClass IN ('FR', 'SO', 'JR', 'SR'))` <br>
 `CONSTRAINT EnrollDropValid CHECK (EnrollDate < DropDate)` <br>
+
+### Example of basic database query
+
+*Tip: You should know or consult a database diagram when formulating queries.* <br>
+
+Basic syntax is
+```
+SELECT <list of columns>
+FROM <list of tables or join operations>
+[WHERE <list of logical express for rows>]
+[ORDER BY <list of sorting specifications>]
+```
+WHERE and OREDER BY are optional.
+
