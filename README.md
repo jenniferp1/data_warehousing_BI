@@ -22,8 +22,8 @@ If you do not want to install something like MySQL, PostgreSQL, etc. you can use
 
 ## TOC
 - [Content Description](#content-description)
-- [postgresql cheat sheet](#cheat-sheet-for-postgresql-server-commands)
-- [psql cheat sheet](#cheat-sheet-for-psql-commands)
+- [PostgreSQL Server Cheat Sheet](#cheat-sheet-for-postgresql-server-commands)
+- [psql Cheat Sheet](#cheat-sheet-for-psql-commands)
 - [pgadmin4](#admin-tools)
 - [Terminology](#terminology)
 
