@@ -113,7 +113,7 @@ Arrow points towards parent table.  Foot of line attached to child table.  Solid
 - **Control** statements ensure proper usage of a database, such as row integrity and security. <br>
 - **Defintion** statements create objects such as tables. <br>
 - **Manipulation** statements retrieve or change rows.<br>
-<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/SqlStatements.png" width="300" height="300"/> <br>
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/SqlStatements.png" width="300" height="225"/> <br>
 
 **Transaction processing** relies on `operational databases` with current data at the individual level. In contrast to `business intelligence processing`, *transaction processing* collects primary data from operations for resolving operational (i.e., day-to-day) problems.
 
