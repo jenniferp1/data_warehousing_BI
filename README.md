@@ -112,27 +112,60 @@ CONSTRAINT  FKStdNo FOREIGN KEY (StdNo) REFERENCE Student
 *Tip: You should know or consult a database diagram when formulating queries.* <br>
 
 Basic syntax is
-```
-SELECT <list of columns>
-FROM <list of tables or join operations>
-[WHERE <list of logical express for rows>]
-[ORDER BY <list of sorting specifications>]
+```sql
+SELECT {list of columns}
+FROM {list of tables \ list of join_operations}
+[WHERE {list of logical express for rows}]
+[ORDER BY {list of sorting specifications}]
 ```
 WHERE and OREDER BY are optional.
 
 ### Example JOIN Syntax
 Join Operator
+```sql
+SELECT
+    select_list
+FROM
+    T1
+{TYPE} JOIN T2 
+ON join_predicate;
+```
 ```
 SELECT table1.column1,table1.column2,table2.column1,....
 FROM table1 
-<TYPE> JOIN table2
+{TYPE} JOIN table2
 ON table1.matching_column = table2.matching_column;
 ```
 *where \<TYPE\> = INNER, LEFT, RIGHT, FULL* <br>
+Note: Column names used in a statement must be qualified with its associated table name, if the column name alone is ambiguous in a query (e.g., `table1.column1`.<br>
   
 Natural Join
-```
+```sql
 SELECT * 
 FROM Table1 NATURAL JOIN Table2;
 ```
 
+Cross Join
+```
+
+SELECT ColumnName_1, 
+       ColumnName_2, 
+       ColumnName_N
+FROM [Table_1]
+     CROSS JOIN [Table_2]
+     
+SELECT * FROM [Table_1]
+CROSS JOIN [Table_2]
+```
+Or
+```
+SELECT ColumnName_1, 
+       ColumnName_2, 
+       ColumnName_N
+FROM [Table_1],[Table_2]
+
+SELECT *
+FROM [Table_1],[Table_2]
+```
+Usually used with a `WHERE` statement <br>
+ <img src="https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/images/CrossWhereJoin.png" width="400" height="250"/> <br>
