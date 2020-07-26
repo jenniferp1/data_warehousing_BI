@@ -121,5 +121,18 @@ FROM <list of tables or join operations>
 WHERE and OREDER BY are optional.
 
 ### Example JOIN Syntax
-
+Join Operator
+```
+SELECT table1.column1,table1.column2,table2.column1,....
+FROM table1 
+<TYPE> JOIN table2
+ON table1.matching_column = table2.matching_column;
+```
+*where \<TYPE\> = INNER, LEFT, RIGHT, FULL* <br>
+  
+Natural Join
+```
+SELECT * 
+FROM Table1 NATURAL JOIN Table2;
+```
 
