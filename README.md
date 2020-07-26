@@ -137,7 +137,7 @@ FROM table1
 ON table1.matching_column = table2.matching_column;
 ```
 *where \<TYPE\> = INNER, LEFT, RIGHT, FULL* <br>
-Note: Column names used in a statement must be qualified with its associated table name, if the column name alone is ambiguous in a query (e.g., `table1.column1`.<br>
+Note: Column names used in a statement must be qualified with its associated table name, if the column name alone is ambiguous in a query (e.g., `table1.column1`).<br>
   
 Natural Join
 ```sql
