@@ -21,6 +21,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
 1. [Building an Intercollegiate Athletics Database: CREATE TABLE](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod03)<br>
+2. [Querying the Intercollegiate Atheletics Database: SELECT, JOIN, GROUP BY](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod04)<br>
 
 ## Usage Examples
 ### Basic SQL CREATE TABLE Syntax
