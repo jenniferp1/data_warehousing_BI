@@ -14,7 +14,8 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example for CONSTRAINT Syntax](#example-constraint-syntax)
 - [Example of External Constraints](#example-create-table-with-external-constraints)
 - [Example Check a Constraint](#example-check-a-constraint)
-- [Example of Basic Database Query](#example-of-basic-database-query)
+- [Example of Basic SELECT Query](#example-of-basic-database-query)
+- [Example for JOIN Syntax](#example-join-syntax)
 
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
@@ -118,4 +119,7 @@ FROM <list of tables or join operations>
 [ORDER BY <list of sorting specifications>]
 ```
 WHERE and OREDER BY are optional.
+
+### Example JOIN Syntax
+
 
