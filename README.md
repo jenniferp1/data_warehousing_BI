@@ -84,13 +84,40 @@ $ pgadmin4
 
 **Entity Relationship Diagram (ERD)** defines the relationship between entities and their attributes within a `relational database`. In an ERD, we are simply visualising the entities, their attributes, and the relation between them. We can mark primary keys with P and foreign keys with F. PF indicates the key is both a primary and foreign key (See `Relational Diagram` below).
 
-**Foreign key** A foreign key is a column or combination of columns related to a `primary key` in *another table*. A foreign key has the same datatype and often the same name as the related `primary key`. Using the Student Table (see defintion for Relational Diagram), student number in an enrollment table has the same name and data type as it's associate primary key, student number in the student table. 
+**Foreign key** A foreign key is a column or combination of columns related to a `primary key` in *another table*. A foreign key has the same datatype and often the same name as the related `primary key`. Using the Student Table (see defintion for Relational Diagram), student number in an enrollment table has the same name and data type as it's associate primary key, student number in the student table. <br>
+
+**Group By** (calculate summary data)  The [GROUP BY](https://www.w3schools.com/sql/sql_groupby.asp) statement groups rows that have the same values into summary rows, like "find the number of customers in each country". 
+The GROUP BY statement is often used with aggregate functions (`COUNT, MAX, MIN, SUM, AVG`) to group the result-set by one or more columns. [Additional examples](https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/README.md#example-group-by-syntax)<br>
 
 **Integrity Rules** 
 - **Entity integrity** means that each table must have a primary key. A primary key cannot have null values in any row. Entity integrity ensures entities; people, things, places, and events are uniquely identified in a database. <br>
 - **Referential integrity** means that column values in one table must match column values in a related table. For example, the value of student number in each row of the enrollment table must match the value of student number in some row of the student table. Referential integrity ensures that a database contains valid connections. For example, each row of the enrollment table contains a student number of a valid student. <br>
 
-**Join** To combine tables in relational database we use matching values. The operation of combining tables on matching values is known as a *join*.
+**Join** To combine tables in relational database we use matching values. The operation of combining tables on matching values is known as a *join*. *Join* is the most widely used operator for combining tables. <br>
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/Joins.png" width="250" height="250"/> <br>
+>The `Join Operator` builds a new table by combining rows from two tables that match on a Join Condition. <br>
+- [Types of Joins](https://www.geeksforgeeks.org/sql-join-set-1-inner-left-right-and-full-joins/) (reference: [Summary cheat sheet](https://dataschool.com/how-to-teach-people-sql/sql-join-types-explained-visually/))
+  - **Inner Join**: Selects all rows from both the tables as long as the condition satisfies (we can also write JOIN instead of INNER JOIN. JOIN is same as INNER JOIN).
+  - **Left Join**: Returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join. The rows for which there is no matching row on right side, the result-set will contain null. 
+  - **Right Join**: Returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join. The rows for which there is no matching row on left side, the result-set will contain null. 
+  - **Full Join**: Ceates the result-set by combining result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL
+  - **Natural Join** vs. **Inner Join**: [Natural Join](https://www.geeksforgeeks.org/difference-between-natural-join-and-inner-join-in-sql/?ref=rp) joins two tables based on same attribute name and datatypes. The resulting table will contain all the attributes of both the table but keep only one copy of each common column. <br>
+  Natural Join Syntax
+  ```
+  SELECT * 
+  FROM Student S NATURAL JOIN Marks M;
+  ```
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/NaturalJoin.png" width="400" height="250"/> <br>
+  Inner Join Syntax
+  ```
+  SELECT * 
+  FROM student S INNER JOIN Marks M ON S.Roll_No = M.Roll_No; 
+  ```
+ <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/InnerJoin.png" width="400" height="250"/> <br>
+ - **Cross Join**: The [CROSS JOIN](https://www.sqlshack.com/sql-cross-join-with-examples/) is used to generate a paired combination of each row of the first table with each row of the second table. This join type is also known as **Cartesian join**. Note: Usually [use with a `WHERE` operation](https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/README.md#example-join-syntax) to avoid returning unecessary rows.<br>
+  <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/CrossJoin.png" width="250" height="400"/> <br>
+ 
+ [Additional examples](https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/README.md#example-join-syntax). <br>
 
 **Operational databases** provide the raw materials for management decision-making. The operational databases must be *summarized* and *integrated* to provide value for tactical and strategic decision-making (i.e., decisions going beyond day-to-day operations).
 
@@ -109,13 +136,23 @@ Alternate terminology is used for tables depending on field.  See table below. <
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/RelationalDiagram.png" width="550" height="400"/> <br>
 Arrow points towards parent table.  Foot of line attached to child table.  Solid line means FK cannot be Null.  Dashed line means FK can accept Null values. <br>
 
+**Select** The [SELECT statement](https://www.w3schools.com/sql/sql_select.asp) is used to select data from a database. The data returned is stored in a result table, called the result-set. [Additional examples](https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/README.md#example-of-basic-database-query).<br>
+
 **Statements** 
 - **Control** statements ensure proper usage of a database, such as row integrity and security. <br>
 - **Defintion** statements create objects such as tables. <br>
 - **Manipulation** statements retrieve or change rows.<br>
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/SqlStatements.png" width="300" height="225"/> <br>
 
-**Transaction processing** relies on `operational databases` with current data at the individual level. In contrast to `business intelligence processing`, *transaction processing* collects primary data from operations for resolving operational (i.e., day-to-day) problems.
+**Transaction processing** relies on `operational databases` with current data at the individual level. In contrast to `business intelligence processing`, *transaction processing* collects primary data from operations for resolving operational (i.e., day-to-day) problems. <br>
+
+**Unqualified name** unqualified means the column name alone without the table. Commonly, tables are combined on the combination of a `primary key` and `foreign key` with the same `unqualified name`. <br>
+
+**Query Clause Evaluation Order**<br>
+To avoid confusion, among the various clauses in the SELECT statement, you should understand the evaluation order among the clauses.
+Row operations in the `FROM` and `WHERE` clauses, proceed group operations in the `GROUP BY` and `HAVING` clauses.
+The final operations of sorting the rows in the `ORDER BY` clause and generating in columns in the result, that's a `SELECT` clause, occur after row and group operations.<br>
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/QueryEvalOrder.png" width="450" height="225"/> <br>
 
 
 
