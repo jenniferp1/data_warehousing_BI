@@ -167,5 +167,9 @@ FROM [Table_1],[Table_2]
 SELECT *
 FROM [Table_1],[Table_2]
 ```
-Usually used with a `WHERE` statement <br>
+Usually `Cross Joins` are used with a `WHERE` statement <br>
  <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/CrossWhereJoin.png" width="400" height="250"/> <br>
+ *Note that the `FROM` clause contains `3 tables`, and the `WHERE` clause contains `2 join conditions`. Typically, a `SELECT` statement with `n tables` should have `n-1 join conditions`. This formula is a practical check on your work.* <br>
+
+The query below returns the same results as the `Cross Join` above but does it with an `Inner Join` <br>
+ <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/AltCrossWhereJoin.png" width="520" height="350"/> <br>
