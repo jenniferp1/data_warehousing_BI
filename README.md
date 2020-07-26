@@ -168,4 +168,4 @@ SELECT *
 FROM [Table_1],[Table_2]
 ```
 Usually used with a `WHERE` statement <br>
- <img src="https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/images/CrossWhereJoin.png" width="400" height="250"/> <br>
+ <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/CrossWhereJoin.png" width="400" height="250"/> <br>
