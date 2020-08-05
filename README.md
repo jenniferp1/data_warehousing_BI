@@ -18,12 +18,14 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example for JOIN Syntax](#example-join-syntax)
 - [Example for GROUP BY Syntax](#example-group-by-syntax)
 - [Example for Set Operators: UNION, INTERSECT, EXCEPT/MINUS](#example-of-set-operators)
+- [Example for Modifications: INSERT, UPDATE, DELETE](#example-of-modifications)
 
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/OrdersDatabaseERD.png" width="700" height="400"/> <br>
 1. [Building an Intercollegiate Athletics Database: CREATE TABLE](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod03)<br>
 2. [Querying the Athletics & Orders Databases: SELECT, JOIN, GROUP BY](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod04)<br>
+3. [Database Modification and Query Formatting](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod05)<br>
 
 ## Usage Examples
 ### Basic SQL CREATE TABLE Syntax
@@ -217,3 +219,79 @@ SELECT * FROM Table_1
 EXCEPT
 SELECT * FROM Table_1;
 ```
+
+### Example of Modifications
+**INSERT**
+```sql
+INSERT INTO Table_Name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+*If you are adding values for all the columns of the table, you do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table.* 
+```sql
+INSERT INTO Table_Name
+VALUES (value1, value2, value3, ...);
+```
+
+**UPDATE**
+```sql
+UPDATE Table_Name
+SET column1 = value1, column2 = value2, ...
+WHERE [condition(s)];
+```
+Examples:
+```sql
+UPDATE Customer
+SET Address = 'Prune Street'
+WHERE Id = 6;
+```
+```sql
+UPDATE employees 
+SET 
+    address = '1300 Carter St',
+    city = 'San Jose',
+    postalcode = 95125,
+    region = 'CA'
+WHERE
+    employeeID = 3;
+```
+```sql
+UPDATE employees 
+SET 
+    salary = salary * 1.02
+WHERE
+    salary < 2000;
+```
+The WHERE clause is optional. If you want to modify all of the values for a set of columns in a table, you do not need to use the WHERE clause.
+```sql
+UPDATE Customer
+SET Address = 'Prune Street', Salary=1000.00;
+```
+
+**DELETE**
+```sql
+DELETE FROM Table_Name
+WHERE
+    condition;
+```
+```sql
+DELETE FROM employees
+WHERE employeeID = 3;
+```
+To remove all rows in the employees table, you just execute the following query: (**not** recommended and make a backup before you do this)
+```sql
+DELETE FROM employees;
+```
+**SQL DELETE – deleting related rows in multiple tables**
+It becomes more complicated when you want to delete a row in a table that is associated with other rows in another table [See here](https://www.zentut.com/sql-tutorial/sql-delete/).<br>
+
+ <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/DeleteMultiTables.png" width="750" height="200"/> <br>
+ 
+When you remove a row in the employees table, you must also remove the related rows in the employeeterritories table. In order to do so, you have to execute two DELETE statements. <br>
+```sql
+DELETE FROM employees
+WHERE employeeID = 3;
+
+DELETE FROM employeeterritories
+WHERE employeeID = 3;
+```
+Most database management systems allow you to create a **foreign key constraint** so that if you delete a row in a table, the corresponding rows the related table are also removed automatically. This ensures the integrity of the data.
