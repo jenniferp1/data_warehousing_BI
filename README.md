@@ -81,13 +81,30 @@ $ pgadmin4
 **Database Development Phases** To produce an operational database, you needed to define data models and populate the database. The diagram below shows important phases in the database development process.
 The first two phases are concerned with the information content of the database. While the last two phases are concerned with efficient implementation.
 
-<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/DBDevelopmentPhases.png" width="660" height="200"/> <br>
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/DBDevelopmentPhases.png" width="660" height="250"/> <br>
 
 **Data transformation** transformational activities such as cleaning, integrating and standardizing are essential for the achieving benefits of a data warehouse.
 
 **Data warehouse** refers to a logically centralized data repository where data from `operational databases` and other sources are integrated, cleaned and standardized to support business intelligence.
 
-**Entity Relationship Diagram (ERD)** defines the relationship between entities and their attributes within a `relational database`. In an ERD, we are simply visualising the entities, their attributes, and the relation between them. We can mark primary keys with P and foreign keys with F. PF indicates the key is both a primary and foreign key (See `Relational Diagram` below).
+**Entity Relationship Diagram (ERD)** defines the relationship between entities and their attributes within a `relational database`. In an ERD, we are simply visualising the entities, their attributes, and the relation between them. We can mark primary keys with P and foreign keys with F. PF indicates the key is both a primary and foreign key (See `Relational Diagram` below).<br>
+
+ERDs have three basic elements. **Entity types**, **relationships**, and **attributes**. 
+- **Entity** types represent collections of physical things such as books, people, and places, as well as events such as payments
+An entity type should have a primary key as well as other descriptive attributes..
+*Rectangles* denote entity types.
+In the sample ERD below, the course entity type represents a set of courses in the database.
+
+- **Attributes** are properties of entity types or relationships.
+Attributes are shown inside an entity type rectangle. Underlining indicates that the attribute or attributes serves as the primary key of the entity type.
+
+- **Relationships** are named associations among entity types. In the example below, relationship names appear in the *line* connecting the entity types involved in a relationship.
+Relationships store associations in both directions. For example, the Has relationship shows the offerings for a given course and the associated course for a given offering.
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/ERDElements.png" width="660" height="250"/> <br>
+Informally, **Entity types** can correspond to **nouns** and **relationships** to **verbs** or **prepositional phrases** connecting nouns.
+In this sense one can read an entity relationship diagram as a collection of sentences.
+For example, the sample ERD above can be read as course has offerings.
 
 **Foreign key** A foreign key is a column or combination of columns related to a `primary key` in *another table*. A foreign key has the same datatype and often the same name as the related `primary key`. Using the Student Table (see defintion for Relational Diagram), student number in an enrollment table has the same name and data type as it's associate primary key, student number in the student table. <br>
 
