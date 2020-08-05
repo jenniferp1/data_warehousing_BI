@@ -78,6 +78,11 @@ $ pgadmin4
 
 **Business intelligence processing** utilizes data warehouses with historical data at both the individual and summarized levels.  Individual-level data provides flexibility for responding to a wide range of business intelligence needs. While summarized data provides fast response to repetitive queries.  *Business intelligence processing* involves substantial processing of data from `operational databases` and external data sources. 
 
+**Database Development Phases** To produce an operational database, you needed to define data models and populate the database. The diagram below shows important phases in the database development process.
+The first two phases are concerned with the information content of the database. While the last two phases are concerned with efficient implementation.
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/DBDevelopmentPhases.png" width="660" height="200"/> <br>
+
 **Data transformation** transformational activities such as cleaning, integrating and standardizing are essential for the achieving benefits of a data warehouse.
 
 **Data warehouse** refers to a logically centralized data repository where data from `operational databases` and other sources are integrated, cleaned and standardized to support business intelligence.
