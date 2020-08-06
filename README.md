@@ -19,6 +19,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example for GROUP BY Syntax](#example-group-by-syntax)
 - [Example for Set Operators: UNION, INTERSECT, EXCEPT/MINUS](#example-of-set-operators)
 - [Example for Modifications: INSERT, UPDATE, DELETE](#example-of-modifications)
+- [Example: How to Draw ER Diagrams](#how-to-draw-er-diagrams)
 
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
@@ -294,4 +295,37 @@ WHERE employeeID = 3;
 DELETE FROM employeeterritories
 WHERE employeeID = 3;
 ```
-Most database management systems allow you to create a **foreign key constraint** so that if you delete a row in a table, the corresponding rows the related table are also removed automatically. This ensures the integrity of the data.
+Most database management systems allow you to create a **foreign key constraint** so that if you delete a row in a table, the corresponding rows the related table are also removed automatically. This ensures the integrity of the data. <br>
+
+### How to Draw ER Diagrams
+[Defintions and Tips](https://creately.com/blog/diagrams/er-diagrams-tutorial/) <br>
+[More defintions](https://www.guru99.com/er-diagram-tutorial-dbms.html) <br>
+Useful tools:
+- [ER Assistant](https://er-assistant.software.informer.com/)
+- [Visual Paradigm](https://www.visual-paradigm.com/download/community.jsp)
+
+[Slides](https://slideplayer.com/slide/10104857/) (slide 30 for Identification Dependency Rules list)<br>
+[Notes](http://index-of.co.uk/Etc/Database%20Design%20Using%20Entity-Relationship%20Diagram.pdf)<br>
+[Dartmouth lecture](https://www.cs.dartmouth.edu/~cs61/Lectures/04%20-%20ER%20Modeling/04%20-%20ER%20Modeling.html) - see link to slides at top of page.<br>
+
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/RulesForERDiagram.png" width="650" height="350"/> <br>
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/ErdIDViolations.png" width="650" height="350"/> <br>
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/CorrectedERD.png" width="650" height="350"/> <br>
+
+
+1. Weak (Non-Identifying) Relationship
+  - Entity is existence-independent of other entities
+  - PK of Child doesn’t contain PK component of Parent Entity
+  - Dashed line _ _ _ _
+
+2. Strong (Identifying) Relationship
+  - Child entity is existence-dependent on parent
+  - PK of Child Entity contains PK component of Parent Entity
+  - Usually occurs utilizing a composite key for primary key, which means one of this composite key components must be the primary key of the parent entity.
+  - Solid line ______
+  
+A [weak entity](https://staff.emu.edu.tr/sebnemcoban/Documents/itec212/lecture/ITEC212_Lecture3.pdf) is simply an entity where it's existence depends on another entity.<br>
+A strong entity is independent from other entities.
