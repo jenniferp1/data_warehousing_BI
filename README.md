@@ -101,6 +101,8 @@ Attributes are shown inside an entity type rectangle. Underlining indicates that
 - **Relationships** are named associations among entity types. In the example below, relationship names appear in the *line* connecting the entity types involved in a relationship.
 Relationships store associations in both directions. For example, the Has relationship shows the offerings for a given course and the associated course for a given offering.
 
+- **Key** An important constraint on an entity is the key. The key is an attribute or a group of attributes whose values can be used to uniquely identify an individual entity in an entity set. There are several [types of keys](https://opentextbc.ca/dbdesign01/chapter/chapter-8-entity-relationship-model/).
+
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/master/images/ERDElements.png" width="660" height="250"/> <br>
 
 - Informally, **Entity types** can correspond to **nouns** and **relationships** to **verbs** or **prepositional phrases** connecting nouns.
