@@ -309,15 +309,17 @@ Useful tools:
 [Notes](http://index-of.co.uk/Etc/Database%20Design%20Using%20Entity-Relationship%20Diagram.pdf)<br>
 [Dartmouth lecture](https://www.cs.dartmouth.edu/~cs61/Lectures/04%20-%20ER%20Modeling/04%20-%20ER%20Modeling.html) - see link to slides at top of page.<br>
 
-One Example with Solution:
+>> Violation Types
 
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/RulesForERDiagram.png" width="650" height="350"/> <br>
+
+>> One Example with Solution:
 
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/ErdIDViolations.png" width="650" height="350"/> <br>
 
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/CorrectedERD.png" width="650" height="350"/> <br>
 
-Second Example with Solution:
+>> Second Example with Solution:
 
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/SampleDiagramError.png" width="650" height="350"/> <br>
 
