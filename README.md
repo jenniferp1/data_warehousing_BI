@@ -301,8 +301,9 @@ Most database management systems allow you to create a **foreign key constraint*
 [Defintions and Tips](https://creately.com/blog/diagrams/er-diagrams-tutorial/) <br>
 [More defintions](https://www.guru99.com/er-diagram-tutorial-dbms.html) <br>
 Useful tools:
-- [ER Assistant](https://er-assistant.software.informer.com/)
-- [Visual Paradigm](https://www.visual-paradigm.com/download/community.jsp)
+- [ER Assistant](https://er-assistant.software.informer.com/) (Windows only)
+- [Visual Paradigm](https://www.visual-paradigm.com/download/community.jsp) 
+- [LucidChart](https://www.lucidchart.com/pages/) (web-based diagramming tool, does not support diagram rules)
 
 [Slides](https://slideplayer.com/slide/10104857/) (slide 30 for Identification Dependency Rules list)<br>
 [Notes](http://index-of.co.uk/Etc/Database%20Design%20Using%20Entity-Relationship%20Diagram.pdf)<br>
