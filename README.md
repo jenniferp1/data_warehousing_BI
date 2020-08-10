@@ -20,6 +20,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example for Set Operators: UNION, INTERSECT, EXCEPT/MINUS](#example-of-set-operators)
 - [Example for Modifications: INSERT, UPDATE, DELETE](#example-of-modifications)
 - [Example: How to Draw ER Diagrams](#how-to-draw-er-diagrams)
+- [Example: Maintaining History of Changes](#tracking-changes)
 
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
@@ -348,3 +349,16 @@ Descriptions [[1](https://www.holistics.io/blog/top-5-free-database-diagram-desi
   
 A [weak entity](https://staff.emu.edu.tr/sebnemcoban/Documents/itec212/lecture/ITEC212_Lecture3.pdf) is simply an entity where it's existence depends on another entity.<br>
 A strong entity is independent from other entities.
+
+### Tracking Changes
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/HistoryOfChanges01.png" width="650" height="350"/> <br>
+
+To maintain a history of, for example, employee titles, the EmpTitle attribute is replaced with an entity type in a one to many relationship.
+The new entity type typically contains a version number as part of its primary key, then borrows from the original entity type for the remaining part of this primary key as shown in the CRD.
+The beginning in entity dates indicate the effective dates for a change.
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/HistoryOfChanges02.png" width="650" height="350"/> <br>
+
+Another history tracking example is shown for student majors in the above partial ERD.
+The StdMajor attribute is replaced with an entity type MAJORHISTORY in identifying one to many relationships, MajorChanges.
+The primary key of major history is a combination of STD number and version number.
