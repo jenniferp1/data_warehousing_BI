@@ -306,7 +306,7 @@ Useful tools:
 - [Visual Paradigm](https://www.visual-paradigm.com/download/community.jsp)
   - [Online version](https://online.visual-paradigm.com/diagrams/solutions/free-online-diagram-editor/)
 - [LucidChart](https://www.lucidchart.com/pages/) (web-based diagramming tool, does not support diagram rules)
-- [Draw.io](https://www.draw.io/) (web-based and allows saving diagrams to cloud storage like github)
+- [Draw.io](https://www.draw.io/) (web-based and allows saving diagrams to cloud storage like github) -- Now [Diagrams.net](https://www.diagrams.net/)
   - [Tutorial](https://drawio-app.com/entity-relationship-diagrams-with-draw-io/)
   - [Video](https://www.youtube.com/watch?v=VgTRNqn2fn0)
 - [dbdiagram.io](https://dbdiagram.io/home) (web-baed diagramming tool that can be done via coding)
