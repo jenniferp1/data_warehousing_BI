@@ -302,8 +302,17 @@ Most database management systems allow you to create a **foreign key constraint*
 [More defintions](https://www.guru99.com/er-diagram-tutorial-dbms.html) <br>
 Useful tools:
 - [ER Assistant](https://er-assistant.software.informer.com/) (Windows only)
-- [Visual Paradigm](https://www.visual-paradigm.com/download/community.jsp) 
+- [Visual Paradigm](https://www.visual-paradigm.com/download/community.jsp)
+  - [Online version](https://online.visual-paradigm.com/diagrams/solutions/free-online-diagram-editor/)
 - [LucidChart](https://www.lucidchart.com/pages/) (web-based diagramming tool, does not support diagram rules)
+- [Draw.io](https://www.draw.io/) (web-based and allows saving diagrams to cloud storage like github)
+  - [Tutorial](https://drawio-app.com/entity-relationship-diagrams-with-draw-io/)
+  - [Video](https://www.youtube.com/watch?v=VgTRNqn2fn0)
+- [dbdiagram.io](https://dbdiagram.io/home) (web-baed diagramming tool that can be done via coding)
+  - [Tutorial](https://community.dbdiagram.io/t/tutorial-many-to-many-relationship/412)
+- [ERDplus](https://erdplus.com/)
+
+Descriptions [[1](https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/)] [[2](https://www.guru99.com/free-database-diagram-design-tools.html)] of free diagramming tool options.
 
 [Slides](https://slideplayer.com/slide/10104857/) (slide 30 for Identification Dependency Rules list)<br>
 [Notes](http://index-of.co.uk/Etc/Database%20Design%20Using%20Entity-Relationship%20Diagram.pdf)<br>
