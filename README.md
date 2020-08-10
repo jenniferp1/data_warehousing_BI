@@ -362,3 +362,14 @@ The beginning in entity dates indicate the effective dates for a change.
 Another history tracking example is shown for student majors in the above partial ERD.
 The StdMajor attribute is replaced with an entity type MAJORHISTORY in identifying one to many relationships, MajorChanges.
 The primary key of major history is a combination of STD number and version number.
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/HistoryOfChanges03.png" width="650" height="350"/> <br>
+
+In the example above, the associate entity is necessary, because the combination of customer and meter may not be unique without its version number.  It is possible, although perhaps rare that the same customer will use the same meter in different times.
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/LimitedHistory.png" width="650" height="350"/> <br>
+
+If you don't need the entired history of chagnes, you can use limited history. For a limited history, a fixed number of attributes can be added to the same type.
+For example, to maintain a history of the current and last employee titles, two attributes, EmpCurrTitle and EmpPrevTitle can be used as depicted in this ERD.
+To record the change states for employee titles, two effective date attributes, beginning and ending per title attribute can be added.
+
