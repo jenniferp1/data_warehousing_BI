@@ -28,6 +28,9 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 1. [Building an Intercollegiate Athletics Database: CREATE TABLE](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod03)<br>
 2. [Querying the Athletics & Orders Databases: SELECT, JOIN, GROUP BY](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod04)<br>
 3. [Database Modification and Query Formatting](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod05)<br>
+4. [Using the Crow’s Foot Notation Part I](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod06)
+5. [Using the Crow’s Foot Notation Part II](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod07)
+6. [Applying the ERD Notation to Problem Descriptions](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod08)
 
 ## Usage Examples
 ### Basic SQL CREATE TABLE Syntax
