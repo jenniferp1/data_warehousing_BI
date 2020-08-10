@@ -370,6 +370,13 @@ The primary key of major history is a combination of STD number and version numb
 
 In the example above, the associate entity is necessary, because the combination of customer and meter may not be unique without its version number.  It is possible, although perhaps rare that the same customer will use the same meter in different times.
 
+**One-to-Many relationship** like the one above can use a [join table](https://fmhelp.filemaker.com/help/18/fmp/en/index.html#page/FMP_Help/many-to-many-relationships.html)
+- Rationale:
+> A **many-to-many relationship** occurs when multiple records in a table are associated with multiple records in another table. For example, a many-to-many relationship exists between customers and products: customers can purchase various products, and products can be purchased by many customers.  Relational database systems usually don't allow you to implement a direct many-to-many relationship between two tables.   To avoid this problem, you can break the many-to-many relationship into two one-to-many relationships by using a third table, called a `join table`. Each record in a join table includes a match field that contains the value of the `primary keys` of the two tables it joins. (In the join table, these match fields are `foreign keys`.) These `foreign key` fields are populated with data as records in the join table are created from either table it joins.
+
+Example Join Table:
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/ExampleJoinTable.png" width="450" height="200"/> <br>
+
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/LimitedHistory.png" width="650" height="350"/> <br>
 
 If you don't need the entired history of chagnes, you can use limited history. For a limited history, a fixed number of attributes can be added to the same type.
