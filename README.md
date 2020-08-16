@@ -312,7 +312,7 @@ Useful tools:
 - [Draw.io](https://www.draw.io/) (web-based and allows saving diagrams to cloud storage like github) -- Now [Diagrams.net](https://www.diagrams.net/)
   - [Tutorial](https://drawio-app.com/entity-relationship-diagrams-with-draw-io/)
   - [Video](https://www.youtube.com/watch?v=VgTRNqn2fn0)
-- [dbdiagram.io](https://dbdiagram.io/home) (web-baed diagramming tool that can be done via coding)
+- [dbdiagram.io](https://dbdiagram.io/home) (web-based diagramming tool that can be done via coding)
   - [Tutorial](https://community.dbdiagram.io/t/tutorial-many-to-many-relationship/412)
 - [ERDplus](https://erdplus.com/)
 
