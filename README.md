@@ -21,6 +21,8 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example for Modifications: INSERT, UPDATE, DELETE](#example-of-modifications)
 - [Example: How to Draw ER Diagrams](#how-to-draw-er-diagrams)
 - [Example: Maintaining History of Changes](#tracking-changes)
+- [Example: Creating Designs and Resolving Design Errors](#creating-designs-and-resolving-design-errors)
+- [Example: Creating ERD Documentation](#creating-erd-documentation)
 
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
@@ -31,7 +33,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 4. [Using the Crow’s Foot Notation Part I](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod06)
 5. [Using the Crow’s Foot Notation Part II](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod07)
 6. [Applying the ERD Notation to Problem Descriptions](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod08)
-
+7. [Narrative Problem Descriptions and Detecting/Resolving Design Errors](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod09)
 ## Usage Examples
 ### Basic SQL CREATE TABLE Syntax
 `CREATE TABLE <table-name> (<column_name data_type list> [<constraint-list>])` <br>
@@ -382,4 +384,31 @@ Example Join Table:
 If you don't need the entired history of chagnes, you can use limited history. For a limited history, a fixed number of attributes can be added to the same type.
 For example, to maintain a history of the current and last employee titles, two attributes, EmpCurrTitle and EmpPrevTitle can be used as depicted in this ERD.
 To record the change states for employee titles, two effective date attributes, beginning and ending per title attribute can be added.
+
+
+### Creating Designs and Resolving Design Errors
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/Mod09-ERDSoln.png" width="500" height="300"/> <br>
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/Mod09-ERDSolnRevised.png" width="500" height="300"/> <br>
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/Mod09-DesignErrors.png" width="500" height="300"/> <br>
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/Mod09-DesignErrorsSoln.png" width="500" height="300"/> <br>
+
+
+
+### Creating ERD Documentation
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/ERDDocumentationSteps.png" width="350" height="200"/> <br>
+
+</br>
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/DocumentingAnERD.png" width="450" height="200"/> <br>
+
+Good documentation enhances an ERD by communicating the justification from important design decisions. You should focus on documentation, on decisions in which there's more than one feasible choice and subtle design choices.
+
+Design documentation should be incorporated into your ERD.
+
+If you're using a drawing tool that has a data dictionary, you should include design justifications in the dictionary.
 
