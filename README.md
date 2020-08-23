@@ -24,6 +24,8 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example: Creating Designs and Resolving Design Errors](#creating-designs-and-resolving-design-errors)
 - [Example: Creating ERD Documentation](#creating-erd-documentation)
 - [Example: Conversion Rules - ERD vs. Relational Diagram](#conversion-rules)
+- [Example: Modification Anomalies & Redundancy](#modification-anomalies-and-redundancy)
+- [Example: Normalization](#normalization)
 
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
@@ -37,6 +39,9 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 6. [Applying the ERD Notation to Problem Descriptions](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod08) (Module 8)
 7. [Narrative Problem Descriptions and Detecting/Resolving Design Errors](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod09) (Module 9)
 8. [ERD Conversion Rules](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod10) (Module 10)
+9. []() (Module 11)
+
+
 ## Usage Examples
 ### Basic SQL CREATE TABLE Syntax
 `CREATE TABLE <table-name> (<column_name data_type list> [<constraint-list>])` <br>
@@ -425,3 +430,33 @@ If you're using a drawing tool that has a data dictionary, you should include de
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/UniversityDBRelationalDiagram.png" width="600" height="400"/> <br>
 
 
+### Modification Anomalies and Redundancy
+A good database design avoids modification anomalies by eliminating excessive redundancies.
+To avoid redundancy, a database design should support one fact in one place.
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/ModificationAnomaly.png" width="450" height="200"/> <br>
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/ModificationAnomalyExample.png" width="450" height="200"/> <br>
+
+<br>
+**Functional dependencies** (FD) indicate columns that should be placed in the same table.
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/FunctionalDependencies.png" width="450" height="200"/> 
+An FD list, organized by left hand side, facilitates the normalization process
+
+### Normalization
+
+[Normalization](https://silo.tips/download/database-design-normalization-exercises-answers) is the process of removing unwanted redundancy in a table design.<br>
+The input to normalization is a list of `functional dependencies` in a table design including a designation of unique columns.
+
+Applying a **normal form** involves detecting violations of the allowable pattern of functional dependencies and splitting the original table into smaller tables if a violation is found.  Normalization essentially splits a table into smaller tables if violations of the normal form are found.
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/Normalization.png" width="450" height="200"/> 
+
+An important example of [normal form](https://www.vertabelo.com/blog/boyce-codd-normal-form-bcnf/) is `Boyce Codd Normal Form`: *“Each attribute must represent a fact about the key, the whole key, and nothing but the key.”*
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/BCNFProcedure.png" width="450" height="200"/> 
+
+Note: normalization less important for business intelligence processing than transaction processing because
+- transaction processing involves heavy change activity, and limited query activities, so modification anomalies can have a major impact.
+- conversely, business intelligence processing involves reporting requirements and data integration, so are less prone to modification anomalies
