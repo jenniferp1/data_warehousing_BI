@@ -23,17 +23,20 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 - [Example: Maintaining History of Changes](#tracking-changes)
 - [Example: Creating Designs and Resolving Design Errors](#creating-designs-and-resolving-design-errors)
 - [Example: Creating ERD Documentation](#creating-erd-documentation)
+- [Example: Conversion Rules - ERD vs. Relational Diagram](#conversion-rules)
 
 ## Exercises
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/Exercise01Mod03/AthleticDatabaseERD.png" width="700" height="400"/> <br>
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/OrdersDatabaseERD.png" width="700" height="400"/> <br>
-1. [Building an Intercollegiate Athletics Database: CREATE TABLE](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod03)<br>
-2. [Querying the Athletics & Orders Databases: SELECT, JOIN, GROUP BY](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod04)<br>
-3. [Database Modification and Query Formatting](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod05)<br>
-4. [Using the Crow’s Foot Notation Part I](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod06)
-5. [Using the Crow’s Foot Notation Part II](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod07)
-6. [Applying the ERD Notation to Problem Descriptions](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod08)
-7. [Narrative Problem Descriptions and Detecting/Resolving Design Errors](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod09)
+
+1. [Building an Intercollegiate Athletics Database: CREATE TABLE](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod03) (Module 3)
+2. [Querying the Athletics & Orders Databases: SELECT, JOIN, GROUP BY](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod04) (Module 4)
+3. [Database Modification and Query Formatting](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod05) (Module 5)
+4. [Using the Crow’s Foot Notation Part I](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod06) (Module 6)
+5. [Using the Crow’s Foot Notation Part II](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod07) (Module 7)
+6. [Applying the ERD Notation to Problem Descriptions](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod08) (Module 8)
+7. [Narrative Problem Descriptions and Detecting/Resolving Design Errors](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod09) (Module 9)
+8. [ERD Conversion Rules](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod10) (Module 10)
 ## Usage Examples
 ### Basic SQL CREATE TABLE Syntax
 `CREATE TABLE <table-name> (<column_name data_type list> [<constraint-list>])` <br>
@@ -411,4 +414,14 @@ Good documentation enhances an ERD by communicating the justification from impor
 Design documentation should be incorporated into your ERD.
 
 If you're using a drawing tool that has a data dictionary, you should include design justifications in the dictionary.
+
+
+### Conversion Rules
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/UniversityDBERD.png" width="600" height="400"/> <br>
+
+</br>
+
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/UniversityDBRelationalDiagram.png" width="600" height="400"/> <br>
+
 
