@@ -39,7 +39,7 @@ Repo covering [SQL basics](https://github.com/jenniferp1/sql_basics) <br>
 6. [Applying the ERD Notation to Problem Descriptions](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod08) (Module 8)
 7. [Narrative Problem Descriptions and Detecting/Resolving Design Errors](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod09) (Module 9)
 8. [ERD Conversion Rules](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod10) (Module 10)
-9. []() (Module 11)
+9. [Normalization](https://github.com/jenniferp1/data_warehousing_BI/tree/DBManagementEss/Exercise01Mod11) (Module 11)
 
 
 ## Usage Examples
@@ -422,8 +422,8 @@ If you're using a drawing tool that has a data dictionary, you should include de
 
 
 ### Conversion Rules
-
-<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/UniversityDBERD.png" width="600" height="400"/> <br>
+<br>
+<img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/UniversityDBERD.png" width="600" height="300"/> <br>
 
 </br>
 
@@ -431,6 +431,7 @@ If you're using a drawing tool that has a data dictionary, you should include de
 
 
 ### Modification Anomalies and Redundancy
+
 A good database design avoids modification anomalies by eliminating excessive redundancies.
 To avoid redundancy, a database design should support one fact in one place.
 
@@ -453,10 +454,26 @@ Applying a **normal form** involves detecting violations of the allowable patter
 
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/Normalization.png" width="450" height="200"/> 
 
-An important example of [normal form](https://www.vertabelo.com/blog/boyce-codd-normal-form-bcnf/) is `Boyce Codd Normal Form`: *“Each attribute must represent a fact about the key, the whole key, and nothing but the key.”*
+An important example of [normal form](https://www.vertabelo.com/blog/boyce-codd-normal-form-bcnf/) is `Boyce Codd Normal Form` (BCNF): *“Each attribute must represent a fact about the key, the whole key, and nothing but the key.”*
 
 <img src="https://github.com/jenniferp1/data_warehousing_BI/blob/DBManagementEss/images/BCNFProcedure.png" width="450" height="200"/> 
 
-Note: normalization less important for business intelligence processing than transaction processing because
+
+Lack of normalization can lead to [anomoalies](https://databasemanagement.fandom.com/wiki/Category:Data_Anomalies): `Deletion`, `Insertion`, or `Update` Anomalies (see above [section](#modification-anomalies-and-redundancy)) 
+
+Normal forms (NF):
+- 1NF
+- 2NF
+- 3NF
+- BCNF (3.5NF)
+
+Additional resources on these normal forms and how to acheive them:
+- [Third Normal Form](https://www.tutorialcup.com/dbms/third-normal-form.htm) (3NF)
+- [Normalization in SQL](https://www.edureka.co/blog/normalization-in-sql/) (also discusses insertion, deletion, and update anomalies)
+- [Database Normal Forms Examples](https://www.guru99.com/database-normalization.html)
+
+[Help](https://www.coursehero.com/file/18228600/Homework-week-12/) with the problem sets.
+
+*Note*: normalization less important for business intelligence processing than transaction processing because
 - transaction processing involves heavy change activity, and limited query activities, so modification anomalies can have a major impact.
 - conversely, business intelligence processing involves reporting requirements and data integration, so are less prone to modification anomalies
